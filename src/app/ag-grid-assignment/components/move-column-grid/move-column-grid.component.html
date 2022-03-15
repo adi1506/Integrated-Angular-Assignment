@@ -1,0 +1,14 @@
+<div class="mat-display-1 head" >Moving the Employee Age Column to the first/last Position</div>
+
+
+<button mat-raised-button (click)="onEmpAgeFirst()">Show Emp Age First</button>
+<button mat-raised-button (click)="onEmpAgeLast()">Move Emp Age to Last</button>
+<ag-grid-angular
+ style="width: 100%; height: 300px;"
+ class="ag-theme-alpine"
+ [columnDefs]="column"
+ [rowData]="row | async"
+ (gridReady)="onGridReady($event)"
+>
+
+</ag-grid-angular>

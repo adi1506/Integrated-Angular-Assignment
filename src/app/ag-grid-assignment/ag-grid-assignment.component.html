@@ -1,7 +1,21 @@
-<button mat-button [matMenuTriggerFor]="menu">Select One</button>
+<div class="select">
+  <p>Select one of the features :</p>
+  <button mat-button [matMenuTriggerFor]="menu">Select One</button>
+</div>
+
+<
+
 <mat-menu #menu="matMenu">
-  <button mat-menu-item routerLink="basicGrid">Basic Grid</button>
-  <button mat-menu-item>Item 2</button>
+  <button mat-menu-item routerLink="./basicGrid">Basic Grid</button>
+  <button mat-menu-item routerLink="./sortingGrid">Sorting Grid</button>
+  <button mat-menu-item routerLink="./filteringGrid">Filtering Grid</button>
+  <button mat-menu-item routerLink="./remoteDataGrid">Adding remote data in Grid</button>
+  <button mat-menu-item routerLink="./selectingRowGrid">Selecting specific rows from Grid</button>
+  <button mat-menu-item routerLink="./resizeColumnGrid">Resizing the column width</button>
+  <button mat-menu-item routerLink="./moveColumnGrid">Move the columns in the grid</button>
+  <button mat-menu-item routerLink="./moveRowGrid">Move the rows in the grid</button>
+  <button mat-menu-item routerLink="./colorRowGrid">Color the rows in the grid</button>
 </mat-menu>
 
-<router-outlet name="agGrid"></router-outlet>
+<!-- <router-outlet name="agGridOutlet"></router-outlet> -->
+<router-outlet></router-outlet>

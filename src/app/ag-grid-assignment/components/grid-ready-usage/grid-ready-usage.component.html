@@ -1,0 +1,12 @@
+<div class="mat-display-1 head" >gridReady Event Usage to update data</div>
+
+
+<ag-grid-angular
+ style="width: 100%; height: 300px;"
+ class="ag-theme-alpine"
+ [columnDefs]="column"
+ (gridReady)="OnGridReady($event)"
+ [rowData]="row"
+>
+
+</ag-grid-angular>
