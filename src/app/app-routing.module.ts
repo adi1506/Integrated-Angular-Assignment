@@ -10,6 +10,9 @@ import { RemoteDataGridComponent } from './ag-grid-assignment/components/remote-
 import { ResizeColumnGridComponent } from './ag-grid-assignment/components/resize-column-grid/resize-column-grid.component';
 import { SelectingRowGridComponent } from './ag-grid-assignment/components/selecting-row-grid/selecting-row-grid.component';
 import { SortingGridComponent } from './ag-grid-assignment/components/sorting-grid/sorting-grid.component';
+import { AngularUploadObservablesComponent } from './file-upload-assignment/components/angular-upload-observables/angular-upload-observables.component';
+import { AngularFileUploaderModuleComponent } from './file-upload-assignment/components/angular-file-uploader-module/angular-file-uploader-module.component';
+import { FileUploadAssignmentComponent } from './file-upload-assignment/file-upload-assignment.component';
 
 const routes: Routes = [
   {
@@ -54,6 +57,21 @@ const routes: Routes = [
       },
     ],
   },
+  {
+    path: 'fileUpload',
+    component: FileUploadAssignmentComponent,
+    children : [
+      {
+        path : 'angularFileUploader',
+        component : AngularFileUploaderModuleComponent
+      },
+      {
+        path : 'angularUploadObservables',
+        component : AngularUploadObservablesComponent
+      }
+      
+    ]
+  }
 ];
 
 @NgModule({

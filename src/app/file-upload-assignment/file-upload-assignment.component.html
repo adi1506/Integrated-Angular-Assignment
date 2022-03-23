@@ -1,0 +1,14 @@
+<div class="select">
+    <p>Select one of the features :</p>
+    <button mat-button [matMenuTriggerFor]="menu">Select One</button>
+  </div>
+  
+  
+  
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item routerLink="./angularFileUploader">Angular File Uploader Module</button>
+    <button mat-menu-item routerLink="./angularUploadObservables">Uploading using Observables</button>
+  </mat-menu>
+  
+  <!-- <router-outlet name="agGridOutlet"></router-outlet> -->
+  <router-outlet></router-outlet>

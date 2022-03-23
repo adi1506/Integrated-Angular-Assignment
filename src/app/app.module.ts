@@ -19,6 +19,11 @@ import { MoveColumnGridComponent } from './ag-grid-assignment/components/move-co
 import { MoveRowGridComponent } from './ag-grid-assignment/components/move-row-grid/move-row-grid.component';
 import { ColorRowGridComponent } from './ag-grid-assignment/components/color-row-grid/color-row-grid.component';
 
+//imports for file upload assignment
+import { FileUploadAssignmentComponent } from './file-upload-assignment/file-upload-assignment.component';
+import { AngularFileUploaderModule } from "angular-file-uploader";
+import { AngularFileUploaderModuleComponent } from './file-upload-assignment/components/angular-file-uploader-module/angular-file-uploader-module.component';
+import { AngularUploadObservablesComponent } from './file-upload-assignment/components/angular-upload-observables/angular-upload-observables.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +38,11 @@ import { ColorRowGridComponent } from './ag-grid-assignment/components/color-row
     ResizeColumnGridComponent,
     MoveColumnGridComponent,
     MoveRowGridComponent,
-    ColorRowGridComponent
+    ColorRowGridComponent,
+    FileUploadAssignmentComponent,
+    AngularFileUploaderModuleComponent,
+    AngularUploadObservablesComponent
+    
   ],
   imports: [
     BrowserModule,
@@ -41,7 +50,8 @@ import { ColorRowGridComponent } from './ag-grid-assignment/components/color-row
     BrowserAnimationsModule,
     MaterialModule,
     AgGridModule,
-    HttpClientModule
+    HttpClientModule,
+    AngularFileUploaderModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,7 @@
+<div class="mat-display-1 head" >Uploading using Observables (converted to base 64)</div>
+
+<input type="file" (change)="onChange($event)"  accept="application/pdf,image/png, image/jpeg"/>
+
+<div *ngIf="myimage">
+  <img [src]="myimage | async" width="200px" height="200px" alt="" />
+</div>
